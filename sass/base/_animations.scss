@@ -1,0 +1,27 @@
+
+@keyframes headrPrimary {
+	0% {
+		transform:translateX(-5rem);
+	}
+
+	50% {
+		transform:translateX(5rem);
+	}
+
+	100% {
+		transform:translateX(0);
+	}
+}
+
+@keyframes headerSecondary {
+	0% {
+		transform:translateX(5rem);
+	}
+	50% {
+		transform:translateX(-5rem);
+	}
+	100% {
+		transform:translateX(0);
+	}
+
+}

@@ -1,0 +1,20 @@
+.header-headings-button:link,
+.header-headings-button:visited {
+			
+			display:inline-block;
+			letter-spacing:.5rem;
+			font-size:1.5rem;
+			text-decoration:none;
+			background-color:$color-white;
+			padding:2rem 3rem;
+			font-weight:bold;
+			border-radius:2rem;	
+			transition:all .3s;
+			color:$color-grey;
+			transition:transform .5s;
+
+			&:hover {
+				transform:translateY(-1rem);
+			}
+					
+		}

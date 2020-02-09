@@ -1,0 +1,112 @@
+.card {
+
+	-moz-perspective:115rem;
+	perspective:115rem;
+	width:35rem;
+	height:50rem;
+	transition:transform .5s;
+	position:relative;
+
+	&-side {
+		position:absolute;
+		top:0;
+		left:0;
+		width:100%;
+		height:100%;		
+		transition:transform .8s;
+		backface-visibility:hidden;
+		box-shadow:$box-shadow;
+		border-radius:.3rem;
+		overflow:hidden;
+
+			&-front {
+				background-color:$color-white;		
+
+			}
+
+			&-back {				
+				transform:rotateY(180deg);
+
+				&-1 {
+					background-image:linear-gradient(to right bottom,$color-orange-light,$color-orange-dark);
+				}
+
+				&-2 {
+					background-image:linear-gradient(to right bottom,$color-green-light,$color-green-dark);
+				}
+
+				&-3 {
+					background-image:linear-gradient(to right bottom,$color-blue-light,$color-blue-dark);
+				}
+			}
+
+			&-image {
+				height:20rem;
+				background-size:cover;
+				background-repeat:no-repeat;
+				background-position:center;
+				
+				background-blend-mode:screen;	
+				clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);	
+				margin-bottom:3rem;	
+
+				&-1 {
+					background-image:linear-gradient(to right bottom,rgba($color-orange-light,.5),rgba($color-orange-dark,.5)),url(../img/nat-5.jpg);
+				}
+
+				&-2 {
+					background-image:linear-gradient(to right bottom,rgba($color-green-light,.5),rgba($color-green-dark,.5)),url(../img/nat-6.jpg);
+				}
+
+				&-3 {
+					background-image:linear-gradient(to right bottom,rgba($color-blue-light,.5),rgba($color-blue-dark,.5)),url(../img/nat-7.jpg);
+				}
+			}
+
+			&-heading {
+				text-transform:uppercase;
+				text-align:right;
+				color:$color-white;
+				background-color:rgba($color-orange-dark,.8);
+				font-size:2rem;
+				width:40%;
+				position:absolute;
+				top:14rem;
+				right:1rem;
+				padding:.2rem 1.5rem;
+				-webkit-box-decoration-break:clone;
+				box-decoration-break:clone;
+				
+			}
+
+			&-list {
+				text-align:center;
+				list-style-type:none;
+				width:80%;
+				margin:0 auto;
+
+				& > * {
+
+					margin-top:1rem;
+					border-bottom:.1rem solid $color-grey-light;
+					padding-bottom:1rem;
+
+					&:not(:last-child) {
+						margin-bottom:2rem;
+
+					}
+
+				}
+			}
+
+		}	
+
+	&:hover .card-side-front {
+		transform:rotateY(-180deg);
+	}
+
+	&:hover .card-side-back {
+		transform:rotateY(0);
+	}
+	
+}

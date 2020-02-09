@@ -1,0 +1,72 @@
+.section-about {
+	
+	&-secondary {
+		font-size:1.5rem;
+		margin-bottom:1rem;
+	}
+
+	&-details {
+		font-size:1rem;
+		word-spacing:1rem;
+		margin-bottom:2rem;
+	}
+
+	&-pictures {
+		position:relative;
+	}
+
+	&-pic {
+		width:30rem;
+		height:20rem;
+		position:absolute;
+		top:0;
+		left:0;
+		transition:transform .3s;
+		box-shadow:$box-shadow;
+
+		&-1 {
+			top:-1rem;
+			left:-2rem;
+		}
+
+		&-2 {
+			top:2rem;
+			left:18rem;
+		}
+
+		&-3 {
+			top:10rem;
+			left:9rem;
+		}
+
+		&:hover {
+			outline:1.5rem solid $color-green-light;
+			outline-offset:1.5rem;
+			transform:scale(1.1);
+			z-index:2;
+		}
+
+	}
+
+	&-image {
+		width:100%;
+		height:100%;		
+	}
+
+	&-pictures:hover .section-about-pic:not(:hover){
+		transform:scale(.8);
+	}
+
+	&-more:link,
+	&-more:visited {
+		text-decoration:none;
+		font-size:1.5rem;
+		background-image:linear-gradient(to right bottom,$color-green-light,$color-green-dark);
+		-webkit-text-fill-color:transparent;
+		text-fill-color:transparent;
+		-webkit-background-clip:text;
+		background-clip:text;
+		border-bottom:.2rem solid $color-green-light;
+		
+	}
+}

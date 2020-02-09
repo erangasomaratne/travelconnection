@@ -1,0 +1,30 @@
+.header-headings {
+		position:absolute;
+		top:40%;
+		left:50%;
+		transform:translate(-50%, -50%);		
+		text-align:center;
+		color:$color-white;
+		text-transform:uppercase;
+		letter-spacing:2rem;
+		
+
+		&-primary {
+			font-size:10rem;	
+			animation-name:headrPrimary;
+			animation-duration:2s;
+			animation-timing-function:linear;			
+		}
+
+		&-secondary {
+			font-size:2rem;
+			animation-name:headerSecondary;
+			animation-duration:2s;
+			animation-timing-function:linear;
+		}		
+
+		& > *:not(:last-child) {
+			margin-bottom:5rem;
+		}
+
+	}

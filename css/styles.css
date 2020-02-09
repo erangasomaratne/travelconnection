@@ -1,0 +1,281 @@
+*,
+*::before,
+*::after {
+  margin: 0;
+  padding: 0;
+  box-sizing: inherit; }
+
+html {
+  font-size: 62.5%; }
+
+body {
+  font-family: 'Nunito', sans-serif;
+  box-sizing: border-box;
+  padding: 3rem; }
+
+@keyframes headrPrimary {
+  0% {
+    transform: translateX(-5rem); }
+  50% {
+    transform: translateX(5rem); }
+  100% {
+    transform: translateX(0); } }
+
+@keyframes headerSecondary {
+  0% {
+    transform: translateX(5rem); }
+  50% {
+    transform: translateX(-5rem); }
+  100% {
+    transform: translateX(0); } }
+
+.section-tours-features {
+  box-shadow: -0.1rem 0.2rem 0.5rem 0rem rgba(0, 0, 0, 0.75);
+  height: 35rem;
+  padding: 2rem;
+  transition: transform .3s;
+  background-color: rgba(220, 221, 225, 0.7); }
+  .section-tours-features i {
+    font-size: 5rem;
+    background-image: linear-gradient(to right bottom, #55efc4, #00b894);
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text; }
+  .section-tours-features h3 {
+    font-size: 2rem;
+    text-transform: uppercase; }
+  .section-tours-features p {
+    font-size: 1.5rem;
+    text-transform: capitalize; }
+  .section-tours-features > *:not(:last-child) {
+    margin-bottom: 4rem; }
+  .section-tours-features:hover {
+    transform: translateY(-2rem); }
+
+.section-about-secondary {
+  font-size: 1.5rem;
+  margin-bottom: 1rem; }
+
+.section-about-details {
+  font-size: 1rem;
+  word-spacing: 1rem;
+  margin-bottom: 2rem; }
+
+.section-about-pictures {
+  position: relative; }
+
+.section-about-pic {
+  width: 30rem;
+  height: 20rem;
+  position: absolute;
+  top: 0;
+  left: 0;
+  transition: transform .3s;
+  box-shadow: -0.1rem 0.2rem 0.5rem 0rem rgba(0, 0, 0, 0.75); }
+  .section-about-pic-1 {
+    top: -1rem;
+    left: -2rem; }
+  .section-about-pic-2 {
+    top: 2rem;
+    left: 18rem; }
+  .section-about-pic-3 {
+    top: 10rem;
+    left: 9rem; }
+  .section-about-pic:hover {
+    outline: 1.5rem solid #55efc4;
+    outline-offset: 1.5rem;
+    transform: scale(1.1);
+    z-index: 2; }
+
+.section-about-image {
+  width: 100%;
+  height: 100%; }
+
+.section-about-pictures:hover .section-about-pic:not(:hover) {
+  transform: scale(0.8); }
+
+.section-about-more:link, .section-about-more:visited {
+  text-decoration: none;
+  font-size: 1.5rem;
+  background-image: linear-gradient(to right bottom, #55efc4, #00b894);
+  -webkit-text-fill-color: transparent;
+  text-fill-color: transparent;
+  -webkit-background-clip: text;
+  background-clip: text;
+  border-bottom: 0.2rem solid #55efc4; }
+
+.header-headings {
+  position: absolute;
+  top: 40%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+  color: #ffffff;
+  text-transform: uppercase;
+  letter-spacing: 2rem; }
+  .header-headings-primary {
+    font-size: 10rem;
+    animation-name: headrPrimary;
+    animation-duration: 2s;
+    animation-timing-function: linear; }
+  .header-headings-secondary {
+    font-size: 2rem;
+    animation-name: headerSecondary;
+    animation-duration: 2s;
+    animation-timing-function: linear; }
+  .header-headings > *:not(:last-child) {
+    margin-bottom: 5rem; }
+
+.header-headings-button:link,
+.header-headings-button:visited {
+  display: inline-block;
+  letter-spacing: .5rem;
+  font-size: 1.5rem;
+  text-decoration: none;
+  background-color: #ffffff;
+  padding: 2rem 3rem;
+  font-weight: bold;
+  border-radius: 2rem;
+  transition: all .3s;
+  color: #576574;
+  transition: transform .5s; }
+  .header-headings-button:link:hover,
+  .header-headings-button:visited:hover {
+    transform: translateY(-1rem); }
+
+.card {
+  -moz-perspective: 115rem;
+  perspective: 115rem;
+  width: 35rem;
+  height: 50rem;
+  transition: transform .5s;
+  position: relative; }
+  .card-side {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: transform .8s;
+    backface-visibility: hidden;
+    box-shadow: -0.1rem 0.2rem 0.5rem 0rem rgba(0, 0, 0, 0.75);
+    border-radius: .3rem;
+    overflow: hidden; }
+    .card-side-front {
+      background-color: #ffffff; }
+    .card-side-back {
+      transform: rotateY(180deg); }
+      .card-side-back-1 {
+        background-image: linear-gradient(to right bottom, #feca57, #ff7f50); }
+      .card-side-back-2 {
+        background-image: linear-gradient(to right bottom, #55efc4, #00b894); }
+      .card-side-back-3 {
+        background-image: linear-gradient(to right bottom, #70a1ff, #5352ed); }
+    .card-side-image {
+      height: 20rem;
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+      background-blend-mode: screen;
+      clip-path: polygon(0 0, 100% 0, 100% 85%, 0% 100%);
+      margin-bottom: 3rem; }
+      .card-side-image-1 {
+        background-image: linear-gradient(to right bottom, rgba(254, 202, 87, 0.5), rgba(255, 127, 80, 0.5)), url(../img/nat-5.jpg); }
+      .card-side-image-2 {
+        background-image: linear-gradient(to right bottom, rgba(85, 239, 196, 0.5), rgba(0, 184, 148, 0.5)), url(../img/nat-6.jpg); }
+      .card-side-image-3 {
+        background-image: linear-gradient(to right bottom, rgba(112, 161, 255, 0.5), rgba(83, 82, 237, 0.5)), url(../img/nat-7.jpg); }
+    .card-side-heading {
+      text-transform: uppercase;
+      text-align: right;
+      color: #ffffff;
+      background-color: rgba(255, 127, 80, 0.8);
+      font-size: 2rem;
+      width: 40%;
+      position: absolute;
+      top: 14rem;
+      right: 1rem;
+      padding: .2rem 1.5rem;
+      -webkit-box-decoration-break: clone;
+      box-decoration-break: clone; }
+    .card-side-list {
+      text-align: center;
+      list-style-type: none;
+      width: 80%;
+      margin: 0 auto; }
+      .card-side-list > * {
+        margin-top: 1rem;
+        border-bottom: 0.1rem solid #dcdde1;
+        padding-bottom: 1rem; }
+        .card-side-list > *:not(:last-child) {
+          margin-bottom: 2rem; }
+  .card:hover .card-side-front {
+    transform: rotateY(-180deg); }
+  .card:hover .card-side-back {
+    transform: rotateY(0); }
+
+.row {
+  width: 114rem;
+  margin: 0 auto; }
+  .row::after {
+    content: '';
+    display: block;
+    clear: both; }
+  .row .col-1-2 {
+    width: calc((100% - 6rem) / 2);
+    float: left; }
+    .row .col-1-2:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-4 {
+    width: calc((100% - (3 * 6rem)) / 4);
+    float: left; }
+    .row .col-1-4:not(:last-child) {
+      margin-right: 6rem; }
+  .row .col-1-3 {
+    width: calc((100% - (2 * 6rem)) / 3);
+    float: left; }
+    .row .col-1-3:not(:last-child) {
+      margin-right: 6rem; }
+
+.header {
+  position: relative;
+  height: 120vh;
+  background-image: linear-gradient(to right bottom, rgba(85, 239, 196, 0.5), rgba(0, 184, 148, 0.5)), url(../img/hero.jpg);
+  background-size: cover;
+  background-position: center;
+  background-repeat: no-repeat;
+  clip-path: polygon(0 0, 100% 0, 100% 75%, 0% 100%); }
+
+.section-about {
+  padding-top: 25rem;
+  margin-top: -17rem;
+  background-color: rgba(220, 221, 225, 0.2);
+  text-transform: uppercase;
+  padding-bottom: 30rem; }
+  .section-about-heading {
+    text-align: center;
+    font-size: 3rem;
+    background-image: linear-gradient(to right bottom, #55efc4, #00b894);
+    -webkit-text-fill-color: transparent;
+    text-fill-color: transparent;
+    -webkit-background-clip: text;
+    background-clip: text;
+    margin-bottom: 5rem; }
+
+.section-tours {
+  margin-top: -15rem;
+  text-align: center;
+  background-image: linear-gradient(to right bottom, rgba(85, 239, 196, 0.6), rgba(0, 184, 148, 0.6)), url(../img/nat-4.jpg);
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  padding-top: 20rem;
+  padding-bottom: 20rem;
+  clip-path: polygon(0 19%, 100% 0%, 100% 81%, 0% 100%); }
+
+.section-tour-cards {
+  margin-top: -15rem;
+  text-transform: uppercase;
+  background-color: rgba(220, 221, 225, 0.2);
+  padding-top: 20rem; }
